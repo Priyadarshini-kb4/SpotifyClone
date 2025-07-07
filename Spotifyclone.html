@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Icons & fonts -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-1ycn6Ica9999jkk..."
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet">
+
+  <link rel="icon" href="./assets/logo.png" />
+  <link rel="stylesheet" href="Spotifyclone.css" />
+
+  <title>Spotify – Web Player: Music for everyone</title>
+</head>
+
+<body>
+  <div class="main">
+    <!--‑‑‑‑‑‑‑‑‑‑  SIDEBAR  ‑‑‑‑‑‑‑‑‑‑-->
+    <div class="sidebar">
+      <div class="nav">
+        <div class="nav-option" style="opacity:1;">
+          <i class="fa-solid fa-house"></i>
+          <a href="#">Home</a>
+        </div>
+        <div class="nav-option">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a href="#">Search</a>
+        </div>
+      </div>
+
+      <div class="library">
+        <div class="options">
+          <div class="lib-option nav-option">
+            <img src="./assets/library_icon.png" />
+            <a href="#">Your Library</a>
+          </div>
+          <div class="icons">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+
+        <div class="lib-box">
+          <div class="box">
+            <p class="box-p1">Create your first playlist</p>
+            <p class="box-p2">It's easy, we'll help you</p>
+            <button class="badge">Create playlist</button>
+          </div>
+          <div class="box">
+            <p class="box-p1">Let's find some podcast to follow</p>
+            <p class="box-p2">We'll keep you updated on new episodes</p>
+            <button class="badge">Browse podcasts</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--‑‑‑‑‑‑‑‑‑‑  MAIN CONTENT  ‑‑‑‑‑‑‑‑‑‑-->
+    <div class="main-content">
+      <!-- top sticky bar -->
+      <div class="sticky-nav">
+        <div class="sticky-nav-icons">
+          <img src="./assets/backward_icon.png" />
+          <img src="./assets/forward_icon.png" class="hide" />
+        </div>
+        <div class="sticky-nav-options">
+          <button class="badge nav-item hide">Explore Premium</button>
+          <button class="badge nav-item dark-badge">
+            <i class="fa-regular fa-circle-down" style="margin-right:5px;"></i>
+            Install app
+          </button>
+          <i class="fa-regular fa-user nav-item"></i>
+        </div>
+      </div>
+
+      <!--‑‑‑‑‑  SECTION: POPULAR ALBUM  ‑‑‑‑‑-->
+      <h2>Popular Album</h2>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="./assets/popcard.jpg" class="card-img" />
+            <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+          </div>
+          <p class="card-title">Manase Manase</p>
+          <p class="card-information">Song · <a href="#">RK Rohan</a></p>
+        </div>
+      </div>
+
+      <!--‑‑‑‑‑  SECTION: TRENDING  ‑‑‑‑‑-->
+      <h2>Trending now near you</h2>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="./assets/kancard2.jpeg" class="card-img" />
+            <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+          </div>
+          <p class="card-title">Manase Manase</p>
+          <p class="card-information">
+            Song · <a href="#">Rajesh Krishnan, K.S Chithra, V Nagendra Prasad</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="./assets/telcard.jpeg" class="card-img" />
+            <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+          </div>
+          <p class="card-title">Oh Priya Priya</p>
+          <p class="card-information">
+            Song · <a href="#">Adnan Sami, Nithya Menon</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="./assets/card2img.jpeg" class="card-img" />
+            <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+          </div>
+          <p class="card-title">Mahiye Jinna Sohna</p>
+          <p class="card-information">Song · <a href="#">Darshan Raval</a></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="./assets/card3img.jpeg" class="card-img" />
+            <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+          </div>
+          <p class="card-title">Mere Paas Tum Ho</p>
+          <p class="card-information">Song · <a href="#">Rahat Fateh Ali Khan</a></p>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="./assets/card4img.jpeg" class="card-img" />
+            <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+          </div>
+          <p class="card-title">Naa Ready (From "Leo")</p>
+          <p class="card-information">
+            Song · <a href="#">Anirudh Ravichander, Vijay, Asal Kolaar</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="./assets/kancard.jpeg" class="card-img" />
+            <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+          </div>
+          <p class="card-title">Top 50 ‑ Global</p>
+          <p class="card-information">Your daily updates of the most played…</p>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="./assets/card3img.jpeg" class="card-img" />
+            <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+          </div>
+          <p class="card-title">Top 50 ‑ Global</p>
+          <p class="card-information">Your daily updates of the most played…</p>
+        </div>
+      </div>
+
+      <!--‑‑‑‑‑  SECTION: FEATURED CHARTS  ‑‑‑‑‑-->
+      <h2>Featured charts</h2>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="./assets/card5img.jpeg" class="card-img" />
+            <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+          </div>
+          <p class="card-information">Your weekly updates of the most played…</p>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="./assets/card6img.jpeg" class="card-img" />
+            <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+          </div>
+          <p class="card-information">Your weekly updates of the most played…</p>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="./assets/card1img.jpeg" class="card-img" />
+            <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+          </div>
+          <p class="card-information">Your daily updates of the most played…</p>
+        </div>
+      </div>
+
+      <!--‑‑‑‑‑  SECTION: RECENTLY PLAYED  ‑‑‑‑‑-->
+      <h2>Recently played</h2>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="./assets/card1img.jpeg" class="card-img" />
+            <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+          </div>
+          <p class="card-title">Top 50 ‑ Global</p>
+          <p class="card-information">Your daily updates of the most played…</p>
+        </div>
+      </div>
+
+      <div class="footer"><div class="line"></div></div>
+    </div>
+
+    <!--‑‑‑‑‑‑‑‑‑‑  BOTTOM MUSIC BAR  ‑‑‑‑‑‑‑‑‑‑-->
+    <div class="music-player">
+
+      <!-- album / heart / add -->
+      <div class="album">
+        <div class="music-card">
+          <img src="./assets/popcard.jpg" class="play-song" />
+          <div class="song-info">
+            <p>Manase Manase</p>
+            <p>RK Rohan</p>
+          </div>
+          <div class="icons">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-circle-plus"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- playback controls -->
+      <div class="player">
+        <div class="player-control">
+          <img src="./assets/player_icon1.png" class="player-control-icon" />
+          <img src="./assets/player_icon2.png" class="player-control-icon" />
+          <img src="./assets/player_icon3.png" class="player-control-icon"
+               style="opacity:1;height:2rem;" />
+          <img src="./assets/player_icon4.png" class="player-control-icon" />
+          <img src="./assets/player_icon5.png" class="player-control-icon" />
+        </div>
+        <div class="playback-bar">
+          <span class="curr-tym">00:00</span>
+          <input type="range" min="0" max="100" class="progress-bar" step="1" />
+          <span class="tot-tym">3:33</span>
+        </div>
+      </div>
+
+      <!-- extra controls -->
+      <div class="controls">
+        <div class="icon-wrap">
+          <span class="material-symbols-outlined icon-green">slideshow</span>
+          <span class="material-symbols-outlined icon-white">lyrics</span>
+          <span class="material-symbols-outlined queue">queue_music</span>
+          <span class="material-symbols-outlined device">google_home_devices</span>
+          <div class="vol-ran">
+            <span class="material-symbols-outlined vol icon-green">volume_up</span>
+            <input type="range" class="vol-range" min="0" max="100" step="1" value="50" />
+          </div>
+          <span class="material-symbols-outlined pip">picture_in_picture_alt</span>
+          <span class="material-symbols-outlined page">pageless</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
